@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="grid-center">
+    <main>
+      <div class="card_conteiner grid-center">
+        <div class="card_rating grid-center">
+          <div class="star grid-center">
+            <img src="images/icon-star.svg" alt="icon-star" />
+          </div>
+          <div class="description">
+            <h1>How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating_conteiner">
+            <div class="circleBgr grid-center" onclick="ratingSet(1)">1</div>
+            <div class="circleBgr grid-center" onclick="ratingSet(2)">2</div>
+            <div class="circleBgr grid-center" onclick="ratingSet(3)">3</div>
+            <div class="circleBgr grid-center" onclick="ratingSet(4)">4</div>
+            <div class="circleBgr grid-center" onclick="ratingSet(5)">5</div>
+          </div>
+          <button onclick="submit()">Submit</button>
+        </div>
+        <div class="card_summary">
+          <img src="images/illustration-thank-you.svg" alt="thank-you-img" />
+          <div class="summary">
+            You selected <span class="selected_nr">1</span> out of 5
+          </div>
+          <div class="description">
+            <h1>Thank you!</h1>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">SoulRvr</a>.
+    </footer>
+  </body>
+</html>
