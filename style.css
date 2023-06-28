@@ -44,7 +44,7 @@ h1 {
   margin: 1rem;
   max-width: 26rem;
   height: 26rem;
-  padding: 2.2rem;
+  padding: min(8vw, 2.2rem);
   border-radius: 2rem;
   background-color: var(--Dark-Blue);
   background-image: linear-gradient(
