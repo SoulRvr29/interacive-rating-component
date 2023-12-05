@@ -9,14 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="dist/script.js"></script>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body class="grid-center">
@@ -43,7 +43,11 @@
           <button onclick="submit()">Submit</button>
         </div>
         <div class="card_summary">
+          <button onclick="goBack()" class="go-back" title="go back">
+            <span>➜</span>
+          </button>
           <img src="images/illustration-thank-you.svg" alt="thank-you-img" />
+
           <div class="summary">
             You selected <span class="selected_nr">1</span> out of 5
           </div>
@@ -59,7 +63,9 @@
     </main>
     <footer>
       Challenge by
-      <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI" target="_blank"
+      <a
+        href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+        target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a href="https://www.frontendmentor.io/profile/SoulRvr29"
